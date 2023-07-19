@@ -3,7 +3,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import Layout from "@root/layouts";
 import { Card } from "@mui/material";
 import Page from "@root/components/Page";
-// import ThirdPartyLicense from "@root/sections/system-admin/manage-third-party-license/ThirdPartyLicense";
+import ThirdPartyLicense from "@root/sections/system-admin/manage-third-party-license/ThirdPartyLicense";
 
 // Constants
 
@@ -34,7 +34,7 @@ ManageThirdParty.getLayout = function getLayout(page: any) {
 export default function ManageThirdParty() {
   return (
     <Page title={PAGE_TITLE}>
-      {/* <ThirdPartyLicense /> */}
+      <ThirdPartyLicense />
     </Page>
   );
 }
