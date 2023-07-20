@@ -96,6 +96,7 @@ export default dashboard;
 const styles = {
   marketingCard: (theme: any, background: any) => ({
     background: background,
+    boxShadow: "0px 0px 7px 3px rgba(14, 145, 140, 0.20)",
     borderRadius: "10px",
     padding: "15px",
     with: "248px",
