@@ -176,6 +176,7 @@ export const useContact = () => {
         name: 'contactArrangements',
         label: 'Reasons for proposed contact arrangements',
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -186,6 +187,7 @@ export const useContact = () => {
         name: 'courtOrders',
         label: 'Are there any court orders relating to contact? For what reason? ',
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -205,6 +207,7 @@ export const useContact = () => {
         name: 'contactOutsideFormalArrangements',
         label: 'What agreements are there about contact outside formal arrangements between the child and others (including the use of social media and mobile phones)?',
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -215,6 +218,7 @@ export const useContact = () => {
         name: 'delegatedAuthority',
         label: 'Has delegated authority regarding contact arrangements been agreed (refer to Section B Contact)?',
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -225,6 +229,7 @@ export const useContact = () => {
         name: 'anythingPreventsContact',
         label: 'If anything prevents contact taking place, what action should the foster carer or social worker take',
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -247,6 +252,7 @@ export const useContact = () => {
         name: 'arrangementsForChildYoungPerson',
         label: "Arrangements for child/young person's social worker to visit, frequency, where will the child be seen",
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -265,6 +271,7 @@ export const useContact = () => {
         name: 'visitingArrangements',
         label: "Visiting arrangements for supervising social worker, frequency (including unannounced visits)",
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -283,6 +290,7 @@ export const useContact = () => {
         name: 'arrangementsForIROtoLAC',
         label: "Arrangements for contact by IRO prior to LAC review meeting",
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -293,6 +301,7 @@ export const useContact = () => {
         name: 'arrangementsForOtherPeople',
         label: "Arrangements for any other people to visit as required, e.g. guardians",
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField
@@ -303,6 +312,7 @@ export const useContact = () => {
         name: 'childYoungPersonFacilitated',
         label: "Does the child/young person know how they can contact their social worker? How will this be facilitated?",
         multiline: true,
+        fullWidth:true,
         minRows: 3
       },
       component: RHFTextField

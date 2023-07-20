@@ -90,8 +90,8 @@ function TableFormModal(props: any) {
             {columns.map(({ inputType, key, label, ...other }: any) => {
               const Component = FIELDS_OBJ[inputType];
               return (
-                <Grid key={key} item xs={12} md={6}>
-                  <Component name={key} label={label} disabled={disabled} />
+                <Grid key={key} item xs={12} md={6} >
+                  <Component name={key} label={label} disabled={disabled} sx={{width:"100%"}}/>
                 </Grid>
               );
             })}

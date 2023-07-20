@@ -2,17 +2,18 @@ export const defaultValues = {
   exampleTable: [
     {
       name: "Branded keywords",
-      requestedDate: new Date(),
-      requestor: "Brawl",
-      goal: "Share a unique use of our video platform from an influencer.",
-      proposedCopy: "Announcing: We've made it easier to edit videos in ....",
-      teamSocialNotes: "Once we've got the tweet, well retweet hannah's post",
-      "typeOfContent": {
+        "typeOfContent": {
         label: "Request",
           value: "1",
           bgColor: "#BEA2FA",
           textColor: "#1D1D1D",
       },
+      requestor: "Brawl",
+      requestedDate: new Date(),
+      goal: "Share a unique use of our video platform from an influencer.",
+      proposedCopy: "Announcing: We've made it easier to edit videos in ....",
+      teamSocialNotes: "Once we've got the tweet, well retweet hannah's post",
+    
 
       channels: [
         {
@@ -41,19 +42,19 @@ export const defaultValues = {
 export const TypeOfContent = [
   {
     label: "Request",
-    value: "Request",
+    value: "1",
     bgColor: "#BEA2FA",
     textColor: "#1D1D1D",
   },
   {
     label: "UGC",
-    value: "UGC",
+    value: "2",
     bgColor: "#A2C5FA",
     textColor: "#1D1D1D",
   },
   {
     label: "Team Social Proposal",
-    value: "Team Social Proposal",
+    value: "3",
     bgColor: "#8EEB92",
     textColor: "#1D1D1D",
   },

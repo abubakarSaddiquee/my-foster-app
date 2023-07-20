@@ -4,19 +4,19 @@ import * as Yup from "yup";
 
 export const initailValue = {
   observanceAuthority: '',
-  observanceDate: '',
+  observanceDate: new Date(),
   observanceNotes: '',
   attendanceAuthority: '',
-  attendanceDate: '',
+  attendanceDate: new Date(),
   attendanceNotes: '',
 };
 
 export const validationSchema = Yup.object().shape({
   observanceAuthority: Yup.string().required('Field is required'),
-  observanceDate: Yup.string().required('Field is required'),
+  observanceDate: Yup.date().required('Field is required'),
   observanceNotes: Yup.string().required('Field is required'),
   attendanceAuthority: Yup.string().required('Field is required'),
-  attendanceDate: Yup.string().required('Field is required'),
+  attendanceDate: Yup.date().required('Field is required'),
   attendanceNotes: Yup.string().required('Field is required'),
 })
 

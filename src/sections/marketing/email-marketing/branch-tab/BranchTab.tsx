@@ -17,6 +17,7 @@ const BranchTab = () => {
             inputType: "textField",
             type: "text",
             key: "name",
+            fullWidth:true,
             defaultValue: "Remus Lupin (Foster Carer)",
             label: "name",
             validation: (Yup: any) => {
@@ -27,6 +28,7 @@ const BranchTab = () => {
             inputType: "textField",
             type: "text",
             key: "description",
+            fullWidth:true,
             defaultValue: "256",
             label: "description",
             validation: (Yup: any) => {
@@ -37,6 +39,7 @@ const BranchTab = () => {
             inputType: "textField",
             type: "text",
             key: "email",
+            fullWidth:true,
             defaultValue: "Reporting and Recording Fostering",
             label: "email",
             validation: (Yup: any) => {

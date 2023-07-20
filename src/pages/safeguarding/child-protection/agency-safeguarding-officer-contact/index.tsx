@@ -1,8 +1,8 @@
-import React from 'react'
-import Layout from '@root/layouts';
-import Page from '@root/components/Page';
+import React from "react";
+import Layout from "@root/layouts";
+import Page from "@root/components/Page";
 import HomeIcon from "@mui/icons-material/Home";
-import AgencySafeguardingOfficer from '@root/sections/safeguarding/child-protection/agency-safeguarding-officer-contact/AgencySafeguardingOfficer';
+import AgencyContactDirectory from "@root/sections/safeguarding/child-protection/agency-safeguarding-officer-contact/AgencyContactDirectory";
 
 // ==========================================================================================================
 
@@ -32,7 +32,7 @@ AgencySafeguarding.getLayout = function getLayout(page: any) {
 export default function AgencySafeguarding() {
   return (
     <Page title={PAGE_TITLE}>
-     <AgencySafeguardingOfficer/>
+      <AgencyContactDirectory />
     </Page>
   );
 }

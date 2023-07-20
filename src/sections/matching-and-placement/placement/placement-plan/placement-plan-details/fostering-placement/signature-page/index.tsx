@@ -7,82 +7,82 @@ import * as Yup from "yup";
 export const initailValue = {
   socialWorkerName: '',
   socialWorkerSignature: '',
-  socialWorkerDate: '',
+  socialWorkerDate: new Date(),
 
   socialWorkerManagerName: '',
   socialWorkerManagerSignature: '',
-  socialWorkerManagerDate: '',
+  socialWorkerManagerDate: new Date(),
 
   supervisingSocialWorkerName: '',
   supervisingSocialWorkerSignature: '',
-  supervisingSocialWorkerDate: '',
+  supervisingSocialWorkerDate: new Date(),
 
   fosteringManagerName: '',
   fosteringManagerSignature: '',
-  fosteringManagerDate: '',
+  fosteringManagerDate: new Date(),
 
   IROName: '',
   IROSignature: '',
-  IRODate: '',
+  IRODate: new Date(),
 
   visitorName: '',
   visitorSignature: '',
-  visitorDate: '',
+  visitorDate: new Date(),
 
   advisorName: '',
   advisorSignature: '',
-  advisorDate: '',
+  advisorDate: new Date(),
 
   significantRole1: '',
   significantName1: '',
   significantSignature1: '',
-  significantDate1: '',
+  significantDate1: new Date(),
 
   significantRole2: '',
   significantName2: '',
   significantSignature2: '',
-  significantDate2: '',
+  significantDate2:new Date(),
 
 };
 
 export const validationSchema = Yup.object().shape({
   socialWorkerName: Yup.string().required('Field is required'),
   socialWorkerSignature: Yup.string().required('Field is required'),
-  socialWorkerDate: Yup.string().required('Field is required'),
+  socialWorkerDate: Yup.date().required('Field is required'),
 
   socialWorkerManagerName: Yup.string().required('Field is required'),
   socialWorkerManagerSignature: Yup.string().required('Field is required'),
-  socialWorkerManagerDate: Yup.string().required('Field is required'),
+  socialWorkerManagerDate: Yup.date().required('Field is required'),
 
   supervisingSocialWorkerName: Yup.string().required('Field is required'),
   supervisingSocialWorkerSignature: Yup.string().required('Field is required'),
-  supervisingSocialWorkerDate: Yup.string().required('Field is required'),
+  supervisingSocialWorkerDate: Yup.date().required('Field is required'),
 
   fosteringManagerName: Yup.string().required('Field is required'),
   fosteringManagerSignature: Yup.string().required('Field is required'),
-  fosteringManagerDate: Yup.string().required('Field is required'),
+  fosteringManagerDate: Yup.date().required('Field is required'),
 
   IROName: Yup.string().required('Field is required'),
   IROSignature: Yup.string().required('Field is required'),
-  IRODate: Yup.string().required('Field is required'),
+  IRODate: Yup.date().required('Field is required'),
 
   visitorName: Yup.string().required('Field is required'),
   visitorSignature: Yup.string().required('Field is required'),
-  visitorDate: Yup.string().required('Field is required'),
+  visitorDate: Yup.date().required('Field is required'),
 
   advisorName: Yup.string().required('Field is required'),
   advisorSignature: Yup.string().required('Field is required'),
-  advisorDate: Yup.string().required('Field is required'),
+  advisorDate: Yup.date().required('Field is required'),
 
   significantRole1: Yup.string().required('Field is required'),
   significantName1: Yup.string().required('Field is required'),
   significantSignature1: Yup.string().required('Field is required'),
-  significantDate1: Yup.string().required('Field is required'),
+  significantDate1: Yup.date().required('Field is required'),
 
   significantRole2: Yup.string().required('Field is required'),
   significantName2: Yup.string().required('Field is required'),
   significantSignature2: Yup.string().required('Field is required'),
-  significantDate2: Yup.string().required('Field is required'),
+  significantDate2: Yup.date().required('Field is required'),
 })
 
 export const formData = [

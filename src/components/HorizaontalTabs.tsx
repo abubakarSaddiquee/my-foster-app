@@ -1,12 +1,6 @@
-import {
-  useState,
-  Children,
-  SyntheticEvent,
-  ReactNode,
-  useImperativeHandle,
-  forwardRef,
-} from "react";
+import { useState, Children, SyntheticEvent, ReactNode, useImperativeHandle, forwardRef } from "react";
 import { Tabs, Tab, Typography, useTheme, Box, Card } from "@mui/material";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 // ----------------------------------------------------------------------
 
@@ -22,6 +16,8 @@ const HorizaontalTabs = forwardRef(
       spacing,
       defaultValue = 0,
       disableBoxShadow = false,
+      addIcon = false,
+      handleAddTab,
     }: any,
     ref
   ) => {
@@ -71,16 +67,13 @@ const HorizaontalTabs = forwardRef(
                 setActiveTab ? setActiveTab(title) : console.log(title);
               }}
               label={
-                <Typography
-                  variant="subtitle2"
-                  component="span"
-                  color={theme.palette.grey[600]}
-                >
+                <Typography variant="subtitle2" component="span" color={theme.palette.grey[600]}>
                   {title}
                 </Typography>
               }
             />
           ))}
+           {addIcon && <AddCircleIcon sx={{ ml: "auto", mt: 0.5, cursor: "pointer" }} onClick={handleAddTab} />}
         </Tabs>
         <Box sx={{ py: 2 }}>
           {arrayChildren?.map((child, index) => (

@@ -5,14 +5,14 @@ import * as Yup from "yup";
 export const initailValue = {
   consent:'',
   authority: '',
-  date: '',
+  date: new Date(),
   notes: '',
 };
 
 export const validationSchema = Yup.object().shape({
   consent: Yup.string().required('Field is required'),
   authority: Yup.string().required('Field is required'),
-  date: Yup.string().required('Field is required'),
+  date: Yup.date().required('Field is required'),
   notes: Yup.string().required('Field is required'),
 });
 

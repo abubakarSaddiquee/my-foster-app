@@ -3,7 +3,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import Layout from "@root/layouts";
 import { Card } from "@mui/material";
 import Page from "@root/components/Page";
-// import AreaOfficeSetup from "@root/sections/system-admin/area-office-setup/AreaOfficeSetup";
+import AreaOfficeSetup from "@root/sections/system-admin/area-office-setup/AreaOfficeSetup";
 
 // Constants
 
@@ -14,12 +14,12 @@ const BREADCRUMBS = [
     href: "/system-admin",
   },
   {
-    name: "Area Office Setup",
+    name: "Local Office List",
     href: "",
   },
 ];
 
-const PAGE_TITLE = "Area Office Setup";
+const PAGE_TITLE = "System Administration";
 AreaOfficeSetups.getLayout = function getLayout(page: any) {
   return (
     <Layout
@@ -34,7 +34,7 @@ AreaOfficeSetups.getLayout = function getLayout(page: any) {
 export default function AreaOfficeSetups() {
   return (
     <Page title={PAGE_TITLE}>
-      {/* <AreaOfficeSetup /> */}
+      <AreaOfficeSetup />
     </Page>
   );
 }

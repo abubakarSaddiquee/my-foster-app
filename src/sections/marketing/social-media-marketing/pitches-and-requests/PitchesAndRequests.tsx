@@ -93,55 +93,12 @@ const COLUMNS = [
       return Yup.string().required("Name is required").min(3);
     },
   },
-  // {
-  //   inputType: "file",
-  //   type: "file",
-  //   key: "image",
-  //   label: "Image",
-  //   size: { xs: 12, md: 12 },
-  //   // Use this validation for images
-  //   validation: (Yup: any) => {
-  //     return Yup.mixed()
-  //       .test("required", "Image is required", (value: any) => {
-  //         if (!value) return false;
-  //         if (typeof value === "string") return !!value;
-  //         return value.type;
-  //       })
-  //       .test("fileFormat", "Unsupported Format", (value: any) => {
-  //         if (!value) return false;
-  //         if (typeof value === "string") return !!value;
-  //         return value && FILE_FORMATS.includes(value.type);
-  //       })
-  //       .test(
-  //         "fileSize",
-  //         `File must be less than or equal to ${fData(MAX_FILE_SIZE)}`,
-  //         (value: any) => {
-  //           if (!value) return false;
-  //           if (typeof value === "string") return !!value;
-  //           return value && value.size <= MAX_FILE_SIZE;
-  //         }
-  //       );
-  //   },
-  //   format: (imgUrl: any) => {
-  //     if (!!imgUrl)
-  //       return (
-  //         <MyAvatar
-  //           src={String(`${process.env.NEXT_PUBLIC_IMG_URL}${imgUrl}`)}
-  //           sx={{
-  //             mx: "auto",
-  //           }}
-  //         />
-  //       );
-
-  //     return "-";
-  //   },
-  // },
   {
     inputType: "file",
     type: "file",
     key: "image",
     label: "Image",
-    size: { xs: 12, md: 12 },
+    size: { xs: 12, md: 6 },
     // Use this validation for images
     validation: (Yup: any) => {
       return Yup.mixed()

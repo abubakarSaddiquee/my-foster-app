@@ -9,7 +9,7 @@ export const defaultValues = {
           bgColor: "#90DB84",
           textColor: "#1D1D1D",
       },
-      firstWeekTraffic: "How a Standing Desk Can Improve",
+      firstWeekTraffic: new Date(),
       feedbeck: "",
 
     },

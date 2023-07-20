@@ -5,9 +5,11 @@ import { useChildSelection } from "./useChildSelection";
 import CustomTable from "@root/components/Table/CustomTable";
 import TableAction from "@root/components/TableAction";
 import { childSelectionData } from ".";
+import router from "next/router";
 
 const ChildSelection = ({ handleIncreamentStep }: any) => {
     const { methods, handleSubmit, onSubmit, theme, isSelectedTable, } = useChildSelection();
+    const activepath = "/foster-child";
     const columns = [
 
         {
@@ -26,7 +28,12 @@ const ChildSelection = ({ handleIncreamentStep }: any) => {
         {
             id: "actions",
             cell: (info: any) => (
-                <TableAction type="view" />
+                <TableAction type="view"  onClick={() => {
+                    router.push({
+                      pathname: '/placement/make/child-selection',
+                    //   query: { childId: "" },
+                    });
+                  }}/>
             ),
             header: () => <span>actions</span>,
             isSortable: false,

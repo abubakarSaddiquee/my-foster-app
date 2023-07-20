@@ -19,7 +19,7 @@ const BREADCRUMBS = [
   },
 ];
 
-const PAGE_TITLE = "System Configuration";
+const PAGE_TITLE = "System Administration";
 SystemConfiguration.getLayout = function getLayout(page: any) {
   return (
     <Layout

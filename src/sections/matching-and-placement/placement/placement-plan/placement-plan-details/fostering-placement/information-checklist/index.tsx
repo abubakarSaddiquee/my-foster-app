@@ -96,6 +96,7 @@ export const formData = [
       name: 'pleaseSpecify',
       label: 'Please Specify',
       multiline:true,
+      fullWidth:true,
       minRows:3
     },
     component: RHFTextField

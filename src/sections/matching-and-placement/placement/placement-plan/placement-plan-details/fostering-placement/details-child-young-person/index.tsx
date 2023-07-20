@@ -5,7 +5,7 @@ import * as Yup from "yup";
 export const initailValue = {
   name: '',
   idNumber: '',
-  dob: '',
+  dob: new Date(),
   gender: '',
   ethnicity: '',
   language: '',
@@ -22,7 +22,7 @@ export const initailValue = {
 export const validationSchema = Yup.object().shape({
   name: Yup.string().required('Field is required'),
   idNumber: Yup.string().required('Field is required'),
-  dob: Yup.string().required('Field is required'),
+  dob: Yup.date().required('Field is required'),
   gender: Yup.string().required('Field is required'),
   ethnicity: Yup.string().required('Field is required'),
   language: Yup.string().required('Field is required'),

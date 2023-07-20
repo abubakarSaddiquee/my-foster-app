@@ -18,7 +18,7 @@ export const defaultValues = {
 export const FormSchema = Yup.object().shape({
   childName: Yup.string().required("Field is required"),
   carerName: Yup.string().required("Field is required"),
-  dateDischarge: Yup.string().required("Field is required"),
+  dateDischarge: Yup.date().required("Field is required"),
   dischargeReport: Yup.string().required("Field is required"),
   approvedRole: Yup.string().required("Field is required"),
   localAuthority: Yup.string().required("Field is required"),

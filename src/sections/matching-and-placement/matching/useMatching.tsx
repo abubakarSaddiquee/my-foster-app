@@ -24,7 +24,7 @@ export const useMatching = () => {
     if (childValue) {
       setSelectValueName(childValue);
     }
-  }, [router.query]);
+  }, []);
 
   const methods: any = useForm({
     resolver: yupResolver(MatchingFormDataValidationSchema),

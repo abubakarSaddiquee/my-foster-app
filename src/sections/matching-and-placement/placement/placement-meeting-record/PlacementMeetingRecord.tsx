@@ -5,9 +5,10 @@ import TableHeader from '@root/components/TableHeader';
 import React from 'react'
 import { placementMeetingRecordData } from '.';
 import { usePlacementMeetingRecord } from './usePlacementMeetingRecord';
+import DeleteModel from '@root/components/modal/DeleteModel';
 
 const PlacementMeetingRecord = () => {
-    const { route, actionType, setActionType, handleAdd } = usePlacementMeetingRecord()
+    const { route, actionType, setActionType, handleAdd,IsDeleteModal, setIsDeleteModal } = usePlacementMeetingRecord()
 
     const columns = [
         {
@@ -71,7 +72,7 @@ const PlacementMeetingRecord = () => {
             cell: (info: any) => (
                 <Box sx={{ display: "flex", gap: "5px", justifyContent: "center" }}>
                     <TableAction type={'edit'} onClicked={() => { setActionType("edit"); route.push({ pathname: "/placement/meeting-record/form", query: { action: actionType } }); }} />
-                    <TableAction type={'delete'} />
+                    <TableAction type={'delete'}    onClicked={() => setIsDeleteModal(true)}/>
                 </Box>
             ),
             header: "Actions",
@@ -92,6 +93,7 @@ const PlacementMeetingRecord = () => {
                     console.log("Updated params: ", data);
                 }}
             />
+              <DeleteModel open={IsDeleteModal} handleClose={() => setIsDeleteModal(false)} />
             <CustomTable
                 data={placementMeetingRecordData}
                 columns={columns}

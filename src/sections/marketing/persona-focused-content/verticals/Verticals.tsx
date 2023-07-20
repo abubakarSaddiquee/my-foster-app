@@ -93,7 +93,7 @@ const COLUMNS = [
     type: "file",
     key: "image",
     label: "Attechment",
-    size: { xs: 12, md: 12 },
+    size: { xs: 12, md: 6 },
     // Use this validation for images
     validation: (Yup: any) => {
       return Yup.mixed()
